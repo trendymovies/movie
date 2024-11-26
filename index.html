@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Trendy Moves</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff7eb3, #8e44ad, #3498db);
+      background-size: 300% 300%;
+      animation: backgroundAnimation 8s infinite;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Animated background */
+    @keyframes backgroundAnimation {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    /* Company logo in circle */
+    .logo-container {
+      width: 300px;
+      height: 300px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .logo-container img {
+      width: 70%;
+      height: 70%;
+    }
+
+    /* Loading animation */
+    .loading-circle {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      border-top: 8px solid #8e44ad;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Welcome message */
+    .welcome-message {
+      font-size: 2.5rem;
+      font-weight: bold;
+      animation: textPulse 2s infinite;
+    }
+
+    @keyframes textPulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Color-changing welcome text */
+    .welcome-text {
+      margin-top: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      animation: colorChange 3s infinite;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #ff7eb3;
+      }
+      25% {
+        color: #8e44ad;
+      }
+      50% {
+        color: #3498db;
+      }
+      75% {
+        color: #f1c40f;
+      }
+      100% {
+        color: #ff7eb3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo section -->
+  <div class="logo-container">
+    <div class="loading-circle"></div>
+    <!-- Replace 'logo.png' with your company logo -->
+    <img src="https://i.imghippo.com/files/IFI1305trM.jpg" alt="Trendy Moves Logo">
+  </div>
+
+  <!-- Welcome message -->
+  <div class="welcome-message">Welcome to Trendy Moves!</div>
+
+  <!-- Color-changing welcome text -->
+  <div class="welcome-text">Experience Innovation Like Never Before</div>
+
+  <script>
+    // Redirect after 5 seconds
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 5000);
+  </script>
+</body>
+</html>
