@@ -1,429 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trendy Moves</title>
-  <style>
-    /* General styles */
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ff7eb3, #8e44ad, #3498db);
-      background-size: 300% 300%;
-      animation: backgroundAnimation 8s infinite;
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            animation: backgroundChange 5s infinite;
+            text-align: center;
+        }
 
-    /* Animated background */
-    @keyframes backgroundAnimation {
-      0%, 100% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-    }
+        @keyframes backgroundChange {
+            0% { background-color: #f4f4f4; }
+            25% { background-color: #add8e6; }
+            50% { background-color: #f9e79f; }
+            75% { background-color: #d4efdf; }
+            100% { background-color: #f4f4f4; }
+        }
 
-    /* Company logo in circle */
-    .logo-container {
-      width: 200px;
-      height: 200px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
+        .logo-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
 
-    .logo-container img {
-      width: 70%;
-      height: 70%;
-    }
+        .logo {
+            width: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-    /* Loading animation */
-    .loading-circle {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 6px solid rgba(255, 255, 255, 0.3);
-      border-top: 6px solid #8e44ad;
-      border-radius: 50%;
-      animation: spin 1.5s linear infinite;
-    }
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid transparent;
+            border-top: 5px solid #3498db;
+            border-right: 5px solid #e74c3c;
+            border-bottom: 5px solid #2ecc71;
+            border-left: 5px solid #f1c40f;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            animation: spin 2s linear infinite;
+        }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
 
-    /* Welcome message */
-    .welcome-message {
-      font-size: 1.5rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      animation: textPulse 2s infinite;
-      padding: 0 10px;
-    }
-
-    @keyframes textPulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-
-    /* Color-changing welcome text */
-    .welcome-text {
-      margin-top: 10px;
-      font-size: 1rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      padding: 0 10px;
-      animation: colorChange 3s infinite;
-    }
-
-    @keyframes colorChange {
-      0% {
-        color: #ff7eb3;
-      }
-      25% {
-        color: #8e44ad;
-      }
-      50% {
-        color: #3498db;
-      }
-      75% {
-        color: #f1c40f;
-      }
-      100% {
-        color: #ff7eb3;
-      }
-    }
-  </style>
-  <link rel="website icon" type="jpj" href="https://i.imghippo.com/files/IFI1305trM.jpg"
+        .welcome-message {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+    <script>
+        // Redirect after 1.5 seconds (1500 milliseconds)
+        setTimeout(function() {
+            window.location.href = "https://gamingfun.me/8FVS25";
+        }, 1500);
+    </script>
 </head>
 <body>
-  <!-- Logo section -->
-  <div class="logo-container">
-    <div class="loading-circle"></div>
-    <!-- Replace 'logo<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trendy Moves</title>
-  <style>
-    /* General styles */<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trendy Moves</title>
-  <style>
-    /* General styles */
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ff7eb3, #8e44ad, #3498db);
-      background-size: 300% 300%;
-      animation: backgroundAnimation 8s infinite;
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow: hidden;
-    }
-
-    /* Animated background */
-    @keyframes backgroundAnimation {
-      0%, 100% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    /* Company logo in circle */
-    .logo-container {
-      width: 200px;
-      height: 200px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-
-    .logo-container img {
-      width: 70%;
-      height: 70%;
-    }
-
-    /* Loading animation */
-    .loading-circle {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 6px solid rgba(255, 255, 255, 0.3);
-      border-top: 6px solid #8e44ad;
-      border-radius: 50%;
-      animation: spin 1.5s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Welcome message */
-    .welcome-message {
-      font-size: 1.5rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      animation: textPulse 2s infinite;
-      padding: 0 10px;
-    }
-
-    @keyframes textPulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-
-    /* Color-changing welcome text */
-    .welcome-text {
-      margin-top: 10px;
-      font-size: 1rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      padding: 0 10px;
-      animation: colorChange 3s infinite;
-    }
-
-    @keyframes colorChange {
-      0% {
-        color: #ff7eb3;
-      }
-      25% {
-        color: #8e44ad;
-      }
-      50% {
-        color: #3498db;
-      }
-      75% {
-        color: #f1c40f;
-      }
-      100% {
-        color: #ff7eb3;
-      }
-    }
-  </style>
-  <link rel="website icon" type="jpj" href="https://i.imghippo.com/files/IFI1305trM.jpg"
-</head>
-<body>
-  <!-- Logo section -->
-  <div class="logo-container">
-    <div class="loading-circle"></div>
-    <!-- Replace 'logo.png' with your company logo -->
-    <img src="https://i.imghippo.com/files/IFI1305trM.jpg" alt="Trendy Moves Logo">
-  </div>
-
-  <!-- Welcome message -->
-  <div class="welcome-message">Welcome to Trendy Movies!</div>
-
-  <!-- Color-changing welcome text -->
-  <div class="welcome-text">Experience Innovation Like Never Before</div>
-
-  <script>
-    // Redirect after 5 seconds
-    setTimeout(() => {
-      window.location.href = "https://gamingfun.me/8FVS25";
-    }, 5000);
-  </script>
-</body>
-</html>
-
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ff7eb3, #8e44ad, #3498db);
-      background-size: 300% 300%;
-      animation: backgroundAnimation 8s infinite;
-      font-family: Arial, sans-serif;
-      color: white;
-      overflow: hidden;
-    }
-
-    /* Animated background */
-    @keyframes backgroundAnimation {
-      0%, 100% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-    }
-
-    /* Company logo in circle */
-    .logo-container {
-      width: 200px;
-      height: 200px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-
-    .logo-container img {
-      width: 70%;
-      height: 70%;
-    }
-
-    /* Loading animation */
-    .loading-circle {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 6px solid rgba(255, 255, 255, 0.3);
-      border-top: 6px solid #8e44ad;
-      border-radius: 50%;
-      animation: spin 1.5s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Welcome message */
-    .welcome-message {
-      font-size: 1.5rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      animation: textPulse 2s infinite;
-      padding: 0 10px;
-    }
-
-    @keyframes textPulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-
-    /* Color-changing welcome text */
-    .welcome-text {
-      margin-top: 10px;
-      font-size: 1rem; /* Reduced size */
-      font-weight: bold;
-      text-align: center;
-      padding: 0 10px;
-      animation: colorChange 3s infinite;
-    }
-
-    @keyframes colorChange {
-      0% {
-        color: #ff7eb3;
-      }
-      25% {
-        color: #8e44ad;
-      }
-      50% {
-        color: #3498db;
-      }
-      75% {
-        color: #f1c40f;
-      }
-      100% {
-        color: #ff7eb3;
-      }
-    }
-  </style>
-  <link rel="website icon" type="jpj" href="https://i.imghippo.com/files/IFI1305trM.jpg"
-</head>
-<body>
-  <!-- Logo section -->
-  <div class="logo-container">
-    <div class="loading-circle"></div>
-    <!-- Replace 'logo.png' with your company logo -->
-    <img src="https://i.imghippo.com/files/IFI1305trM.jpg" alt="Trendy Moves Logo">
-  </div>
-
-  <!-- Welcome message -->
-  <div class="welcome-message">Welcome to Trendy Movies!</div>
-
-  <!-- Color-changing welcome text -->
-  <div class="welcome-text">Experience Innovation Like Never Before</div>
-
-  <script>
-    // Redirect after 5 seconds
-    setTimeout(() => {
-      window.location.href = "https://trendymovies.github.io/login/";
-    }, 5000);
-  </script>
-</body>
-</html>
-.png' with your company logo -->
-    <img src="https://i.imghippo.com/files/IFI1305trM.jpg" alt="Trendy Moves Logo">
-  </div>
-
-  <!-- Welcome message -->
-  <div class="welcome-message">Welcome to Trendy Movies!</div>
-
-  <!-- Color-changing welcome text -->
-  <div class="welcome-text">Experience Innovation Like Never Before</div>
-
-  <script>
-    // Redirect after 5 seconds
-    setTimeout(() => {
-      window.location.href = "https://trendymovies.github.io/login/";
-    }, 5000);
-  </script>
+    <div class="logo-container">
+        <div class="loader"></div>
+        <img class="logo" src="https://i.imghippo.com/files/IFI1305trM.jpg" alt="Company Logo">
+    </div>
+    <p class="welcome-message">Welcome to Trendy Movies</p>
 </body>
 </html>
